@@ -364,11 +364,11 @@ https://www.tooplate.com/view/2119-gymso-fitness
 
   .hero {
     background-image: url("TO_DO_logo.jpg");
-    background-size: cover;
+    background-size: contain;
     background-position: top;
     background-repeat: no-repeat;
     vertical-align: middle;
-    max-height: 50vh;
+    max-height: 100vh;
     position: relative;
   }
 
