@@ -366,7 +366,7 @@ https://www.tooplate.com/view/2119-gymso-fitness
     background-image: url("TO_DO_blank.png");
     background-size: contain;
     background-position: top;
-    background-repeat: no-repeat;
+    background-repeat: repeat-x;
     vertical-align: middle;
     min-height: 100vh;
     position: relative;
