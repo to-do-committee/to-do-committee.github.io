@@ -36,4 +36,6 @@ ax.spines['left'].set_color('grey')        # setting up Y-axis tick color to red
 plt.legend(prop={'size': 9})
 plt.tight_layout() # make labels fit on page 
 # plt.show()
-plt.savefig('results_week2.png', dpi=500, transparent=True)
+plt.rcParams['axes.facecolor']='silver'
+plt.rcParams['savefig.facecolor']='black'
+plt.savefig('results_week2.png', dpi=500)
