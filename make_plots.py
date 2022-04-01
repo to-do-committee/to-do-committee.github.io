@@ -38,4 +38,4 @@ plt.tight_layout() # make labels fit on page
 # plt.show()
 plt.rcParams['axes.facecolor']='silver'
 plt.rcParams['savefig.facecolor']='black'
-plt.savefig('results_week2.png', dpi=500)
+plt.savefig('results_week2.png', dpi=500, transparent=False)
