@@ -33,7 +33,7 @@ ax.set_yticks([0,5,10,15,20, 25])
 ax.tick_params(axis='y', colors='grey')  #setting up Y-axis tick color to black
 ax.spines['left'].set_color('grey')        # setting up Y-axis tick color to red
 
-plt.legend(prop={'size': 8})
+plt.legend(prop={'size': 9})
 plt.tight_layout() # make labels fit on page 
 # plt.show()
-plt.savefig('results_week2.png', dpi=500)
+plt.savefig('results_week2.png', dpi=500, transparent=True)
