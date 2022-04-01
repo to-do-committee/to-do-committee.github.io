@@ -37,5 +37,5 @@ plt.legend(prop={'size': 9})
 plt.tight_layout() # make labels fit on page 
 # plt.show()
 plt.rcParams['axes.facecolor']='silver'
-plt.rcParams['savefig.facecolor']='black'
+plt.rcParams['savefig.facecolor']='#171819'
 plt.savefig('results_week2.png', dpi=500, transparent=False)
