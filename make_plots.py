@@ -13,19 +13,27 @@ import matplotlib.pyplot as plt
 # ax.spines['left'].set_color('grey')        # setting up Y-axis tick color to red
 # ax.spines['bottom'].set_color('grey') 
 # plt.legend()
+# plt.show()
 # plt.savefig('results_week1.png', dpi=500)
 
 
 X = np.arange(5)
 fig = plt.figure(dpi=100)
-ax = fig.add_axes([0,0,1,1])
-ax.bar(X, [14,12,24,21,17], color = 'black', width = 0.25,label='Will probably stay the same' ,tick_label=['Vegan', 'Between Vegan and Vegetarian', 'Vegetarian', 'Flexiterian', 'Omnivore'])
+# ax = fig.add_axes([0,0,1,1])
+ax = fig.add_subplot(111)
+ax.bar(X, [14,12,24,21,17], color = 'black', width = 0.25,label='Will probably stay the same' ) # ,tick_label=['Vegan', 'Between Vegan and Vegetarian', 'Vegetarian', 'Flexiterian', 'Omnivore']
 ax.bar(X + 0.25, [1,2,4,7,0], color = 'orangered', width = 0.25,label='Will probably change next year')
 ax.set_facecolor("silver")
-ax.tick_params(axis='x', colors='grey')    #setting up X-axis tick color to red
-ax.tick_params(axis='y', colors='grey')  #setting up Y-axis tick color to black
-
-ax.spines['left'].set_color('grey')        # setting up Y-axis tick color to red
+ax.set_xticks(X)
+ax.set_xticklabels(['Vegan', 'Between Vegan & Vegetarian', 'Vegetarian', 'Flexitarian', 'Omnivore'],rotation=15, ha='right', rotation_mode='anchor')
+ax.tick_params(axis='x', colors='grey') 
 ax.spines['bottom'].set_color('grey') 
-plt.legend()
+
+ax.set_yticks([0,5,10,15,20, 25])
+ax.tick_params(axis='y', colors='grey')  #setting up Y-axis tick color to black
+ax.spines['left'].set_color('grey')        # setting up Y-axis tick color to red
+
+plt.legend(prop={'size': 8})
+plt.tight_layout() # make labels fit on page 
+# plt.show()
 plt.savefig('results_week2.png', dpi=500)
