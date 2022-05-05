@@ -16,26 +16,52 @@ import matplotlib.pyplot as plt
 # plt.show()
 # plt.savefig('results_week1.png', dpi=500)
 
+# week 2
+# X = np.arange(5)
+# fig = plt.figure(dpi=100)
+# # ax = fig.add_axes([0,0,1,1])
+# ax = fig.add_subplot(111)
+# ax.bar(X, [14,12,24,21,17], color = 'black', width = 0.25,label='Will probably stay the same' ) # ,tick_label=['Vegan', 'Between Vegan and Vegetarian', 'Vegetarian', 'Flexiterian', 'Omnivore']
+# ax.bar(X + 0.25, [1,2,4,7,0], color = 'orangered', width = 0.25,label='Will probably change next year')
+# ax.set_facecolor("silver")
+# ax.set_xticks(X)
+# ax.set_xticklabels(['Vegan', 'Between Vegan & Vegetarian', 'Vegetarian', 'Flexitarian', 'Omnivore'],rotation=15, ha='right', rotation_mode='anchor')
+# ax.tick_params(axis='x', colors='grey') 
+# ax.spines['bottom'].set_color('grey') 
+
+# ax.set_yticks([0,5,10,15,20, 25])
+# ax.tick_params(axis='y', colors='grey')  #setting up Y-axis tick color to black
+# ax.spines['left'].set_color('grey')        # setting up Y-axis tick color to grey
+
+# plt.legend(prop={'size': 9})
+# plt.tight_layout() # make labels fit on figure
+
+# plt.rcParams['axes.facecolor']='silver'
+# plt.rcParams['savefig.facecolor']='#171819'
+# plt.savefig('results_week2.png', dpi=500, transparent=False)
+
+# week 3
 
 X = np.arange(5)
 fig = plt.figure(dpi=100)
 # ax = fig.add_axes([0,0,1,1])
 ax = fig.add_subplot(111)
-ax.bar(X, [14,12,24,21,17], color = 'black', width = 0.25,label='Will probably stay the same' ) # ,tick_label=['Vegan', 'Between Vegan and Vegetarian', 'Vegetarian', 'Flexiterian', 'Omnivore']
-ax.bar(X + 0.25, [1,2,4,7,0], color = 'orangered', width = 0.25,label='Will probably change next year')
+ax.bar(X, [43,28,24,32,13], color = 'black', width = 0.25,label='Student' ) # ,tick_label=['Vegan', 'Between Vegan and Vegetarian', 'Vegetarian', 'Flexiterian', 'Omnivore']
+ax.bar(X + 0.25, [7,5,5,1,1], color = 'orangered', width = 0.25,label='PhD or staff')
 ax.set_facecolor("silver")
 ax.set_xticks(X)
-ax.set_xticklabels(['Vegan', 'Between Vegan & Vegetarian', 'Vegetarian', 'Flexitarian', 'Omnivore'],rotation=15, ha='right', rotation_mode='anchor')
+ax.set_xticklabels(['(False) self-assurance', 'Nailing it', 'Pure despair', "Don't care anymore", 'In between multiple'],rotation=45, ha='right', rotation_mode='anchor')
 ax.tick_params(axis='x', colors='grey') 
 ax.spines['bottom'].set_color('grey') 
 
 ax.set_yticks([0,5,10,15,20, 25])
 ax.tick_params(axis='y', colors='grey')  #setting up Y-axis tick color to black
-ax.spines['left'].set_color('grey')        # setting up Y-axis tick color to red
+ax.spines['left'].set_color('grey')        # setting up Y-axis tick color to grey
 
 plt.legend(prop={'size': 9})
-plt.tight_layout() # make labels fit on page 
-# plt.show()
+plt.tight_layout() # make labels fit on figure
+
 plt.rcParams['axes.facecolor']='silver'
 plt.rcParams['savefig.facecolor']='#171819'
-plt.savefig('results_week2.png', dpi=500, transparent=False)
+plt.savefig('results_week3.png', dpi=500, transparent=False)
+
