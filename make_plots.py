@@ -93,5 +93,20 @@ def make_plots(results1, results2, xlabels, cat1, cat2, output_file_name):
 # plt.savefig('results_week4.png', dpi=500, transparent=False)
 
 # week 5
-make_plots(results1=[29,5,35,4,9], results2=[12,0,14,17,8], xlabels=['Home Office', 'Both', 'Beurs', 'Tresoar', 'Dbieb'], 
-    cat1='Basically always there', cat2='Only there when shit hits the fan', output_file_name='results_week5')
+# make_plots(results1=[29,5,35,4,9], results2=[12,0,14,17,8], xlabels=['Home Office', 'Both', 'Beurs', 'Tresoar', 'Dbieb'], 
+#     cat1='Basically always there', cat2='Only there when shit hits the fan', output_file_name='results_week5')
+
+# week 6 
+
+make_plots(results1=[0,3,8,19,13], results2=[1,5,13,25,14], xlabels=['I hate it', 'I dislike it', 'Neutral', 'I like it', 'I love it'], 
+    cat1='Mostly live in places <100k inhabitants', cat2='Mostly live in places >100k inhabitants', output_file_name='results_week6')
+
+# week 7 
+
+make_plots(results1=[3,3,0,3,50], results2=[66,27,16,3,5], xlabels=['Non-existent', 'Basic', 'Conversational', 'Proficient', 'Fluent'], 
+    cat1="I'm Dutch", cat2="I'm not Dutch", output_file_name='results_week7')
+
+# week 8
+
+make_plots(results1=[6,27,17,33,6, 0], results2=[2,41,7,24,6,3], xlabels=['Asexual', 'Straight', 'Gay/Lesbian', 'Multisexual', 'Queer', 'Not listed here'], 
+    cat1="Single and (not) ready to mingle", cat2="Seeing someone/in a relationship", output_file_name='results_week8')
