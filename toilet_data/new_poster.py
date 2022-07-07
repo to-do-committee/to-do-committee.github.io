@@ -22,14 +22,18 @@ def new_post(week_number,  picture, poster_text_file='new_poster_text.txt'):
         template = template.replace('PLACEHOLDER_POSTER_TEXT', poster_text)
         template = template.replace('PLACEHOLDER_PIC', picture)
 
-    with open("index.html", "rt") as fin:
-        with open("out.html", "wt") as fout:
-            for line in fin:
-                fout.write(line.replace(end, template))
-    
-    os.remove("index.html")
-    os.rename("out.html", "index.html")
+    if input(f"Are you sure you want to add Week {week_number} with the picture {picture} and the following text below to the poster data side?\n[y/n] \n\n{poster_text}\n") == 'y':
+
+        with open("index.html", "rt") as fin:
+            with open("out.html", "wt") as fout:
+                for line in fin:
+                    fout.write(line.replace(end, template))
+        
+        os.remove("index.html")
+        os.rename("out.html", "index.html")
+    else: 
+        print("Action cancelled.")
 
 
-new_post(week_number='Six', poster_text_file='new_poster_text.txt', picture='results_week6.png')
+new_post(week_number='Eight', poster_text_file='new_poster_text.txt', picture='results_week8.png')
     
